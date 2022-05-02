@@ -1,0 +1,11 @@
+05/01/2022 13:34:30 Starting indexer.
+05/01/2022 13:34:30 Reading configurations' file.
+05/01/2022 13:34:30 Reading file data/cf74.xml
+05/01/2022 13:34:30 Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+05/01/2022 13:34:30 Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+05/01/2022 13:34:30 Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+05/01/2022 13:34:30 Total documents read: 164
+05/01/2022 13:34:30 Generating inverted list.
+05/01/2022 13:34:30 Inverted list generated. Number of keys: 3615
+05/01/2022 13:34:30 Saving inverted list to inverted_list.csv
+05/01/2022 13:34:30 Saved inverted list to inverted_list.csv
