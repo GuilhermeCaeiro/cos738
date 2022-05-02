@@ -9,3 +9,38 @@
 05/01/2022 13:34:30 Inverted list generated. Number of keys: 3615
 05/01/2022 13:34:30 Saving inverted list to inverted_list.csv
 05/01/2022 13:34:30 Saved inverted list to inverted_list.csv
+05/01/2022 22:33:54 Reading configurations' file.
+05/01/2022 22:34:19 Reading configurations' file.
+05/01/2022 22:34:19 Loading inverted list.
+05/01/2022 22:34:38 Reading configurations' file.
+05/01/2022 22:34:38 Loading inverted list.
+05/01/2022 22:34:38 Inverted list loaded.
+05/01/2022 22:34:38 Calculating matrix of the TF-IDFs.
+05/01/2022 22:34:48 Reading configurations' file.
+05/01/2022 22:34:48 Loading inverted list.
+05/01/2022 22:34:48 Inverted list loaded.
+05/01/2022 22:34:48 Calculating matrix of the TF-IDFs.
+05/01/2022 22:34:48 Calculating tf (term frequency) for all documents.
+05/01/2022 22:35:48 Reading configurations' file.
+05/01/2022 22:35:48 Loading inverted list.
+05/01/2022 22:35:48 Inverted list loaded.
+05/01/2022 22:35:48 Calculating matrix of the TF-IDFs.
+05/01/2022 22:35:48 Calculating idf (inverse document frequency) for all documents.
+05/01/2022 22:36:02 Reading configurations' file.
+05/01/2022 22:36:02 Loading inverted list.
+05/01/2022 22:36:02 Inverted list loaded.
+05/01/2022 22:36:02 Calculating matrix of the TF-IDFs.
+05/01/2022 22:36:02 Calculating idf (inverse document frequency) for all documents.
+05/01/2022 22:36:32 Reading configurations' file.
+05/01/2022 22:36:32 Loading inverted list.
+05/01/2022 22:36:32 Inverted list loaded.
+05/01/2022 22:36:32 Calculating matrix of the TF-IDFs.
+05/01/2022 22:36:32 Calculating idf (inverse document frequency) for all documents.
+05/01/2022 22:37:31 Reading configurations' file.
+05/01/2022 22:37:31 Loading inverted list.
+05/01/2022 22:37:31 Inverted list loaded.
+05/01/2022 22:37:31 Calculating matrix of the TF-IDFs.
+05/01/2022 22:37:31 Calculating idf (inverse document frequency) for all documents.
+05/01/2022 22:37:31 Finished calculating idf for all documents.
+05/01/2022 22:37:31 Calculating tf (term frequency) for all documents.
+05/01/2022 22:37:31 Finished calculating tf for all documents.
