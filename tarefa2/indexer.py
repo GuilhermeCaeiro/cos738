@@ -1,5 +1,6 @@
 import numpy as np
 import logging
+import pickle
 
 class Indexer:
 
@@ -115,8 +116,14 @@ class Indexer:
 
     def save_model(self):
         logging.info("Saving the TF-IDF matrix.")
+
+        data = {
+            "document_ids": self.document_ids,
+            "documents_matrix": self.documents_matrix
+        }
         with open(self.configs["ESCREVA"][0], "wb") as file:
-            np.save(file, self.documents_matrix)
+            #np.save(file, self.documents_matrix)
+            pickle.dump(data, file)
 
         logging.info("TF-IDFs matrix saved to file: " + self.configs["ESCREVA"][0])
 
