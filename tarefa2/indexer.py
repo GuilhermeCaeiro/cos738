@@ -107,7 +107,9 @@ class Indexer:
 
         print(tf.shape, idf.shape, np.diag(idf).shape)
 
-        self.documents_matrix = np.matrix(tf) * np.matrix(np.diag(idf)) # conveting matrices to matrix to avoid the weird behavior of ndarray.
+        self.documents_matrix = tf * idf # (m x n) * (1 x n). As they are ndarrays, each line in tf will be multiplied by idf row wise, keeping a m x n ndarray as result.
+
+        print(self.documents_matrix.shape)
 
         logging.info("Finished calculating matrix of the TF-IDFs.")
 

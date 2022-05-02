@@ -44,3 +44,30 @@
 05/01/2022 22:37:31 Finished calculating idf for all documents.
 05/01/2022 22:37:31 Calculating tf (term frequency) for all documents.
 05/01/2022 22:37:31 Finished calculating tf for all documents.
+05/01/2022 22:45:00 Reading configurations' file.
+05/01/2022 22:45:00 Loading inverted list.
+05/01/2022 22:45:01 Inverted list loaded.
+05/01/2022 22:45:01 Calculating matrix of the TF-IDFs.
+05/01/2022 22:45:01 Calculating idf (inverse document frequency) for all documents.
+05/01/2022 22:45:01 Finished calculating idf for all documents.
+05/01/2022 22:45:01 Calculating tf (term frequency) for all documents.
+05/01/2022 22:45:01 Finished calculating tf for all documents.
+05/02/2022 03:35:31 Reading configurations' file.
+05/02/2022 03:35:31 Loading inverted list.
+05/02/2022 03:35:31 Inverted list loaded.
+05/02/2022 03:35:31 Calculating matrix of the TF-IDFs.
+05/02/2022 03:35:31 Calculating idf (inverse document frequency) for all documents.
+05/02/2022 03:35:31 Finished calculating idf for all documents.
+05/02/2022 03:35:31 Calculating tf (term frequency) for all documents.
+05/02/2022 03:35:31 Finished calculating tf for all documents.
+05/02/2022 03:41:03 Reading configurations' file.
+05/02/2022 03:41:03 Loading inverted list.
+05/02/2022 03:41:03 Inverted list loaded.
+05/02/2022 03:41:03 Calculating matrix of the TF-IDFs.
+05/02/2022 03:41:03 Calculating idf (inverse document frequency) for all documents.
+05/02/2022 03:41:03 Finished calculating idf for all documents.
+05/02/2022 03:41:03 Calculating tf (term frequency) for all documents.
+05/02/2022 03:41:03 Finished calculating tf for all documents.
+05/02/2022 03:41:03 Finished calculating matrix of the TF-IDFs.
+05/02/2022 03:41:03 Saving the TF-IDF matrix.
+05/02/2022 03:41:03 TF-IDFs matrix saved to file: matrix.npy
