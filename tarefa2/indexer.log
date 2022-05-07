@@ -92,3 +92,21 @@
 05/02/2022 03:52:08 Finished calculating matrix of the TF-IDFs.
 05/02/2022 03:52:08 Saving the TF-IDF matrix.
 05/02/2022 03:52:08 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 20:18:04 Reading configurations' file.
+05/07/2022 20:18:25 Reading configurations' file.
+05/07/2022 20:19:42 Reading configurations' file.
+05/07/2022 20:19:42 Reading file data/cfquery.xml
+05/07/2022 20:20:05 Reading configurations' file.
+05/07/2022 20:20:05 Reading file data/cfquery.xml
+05/07/2022 20:20:38 Reading configurations' file.
+05/07/2022 20:20:38 Reading file data/cfquery.xml
+05/07/2022 20:20:38 Total documents read: 
+05/07/2022 20:22:22 Reading configurations' file.
+05/07/2022 20:22:22 Reading file data/cfquery.xml
+05/07/2022 20:22:22 Total documents read: 
+05/07/2022 20:23:59 Reading configurations' file.
+05/07/2022 20:23:59 Reading file data/cfquery.xml
+05/07/2022 20:23:59 Total documents read: 
+05/07/2022 20:25:54 Reading configurations' file.
+05/07/2022 20:25:54 Reading file data/cfquery.xml
+05/07/2022 20:25:54 Total documents read: 
