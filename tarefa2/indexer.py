@@ -103,12 +103,12 @@ class Indexer:
     def calculate_tf_idf(self):
         logging.info("Calculating matrix of the TF-IDFs.")
 
-        idf = self.calculate_idf()
-        tf = self.calculate_tf()
+        self.idf = self.calculate_idf()
+        self.tf = self.calculate_tf()
 
-        print(tf.shape, idf.shape, np.diag(idf).shape)
+        print(self.tf.shape, self.idf.shape, np.diag(self.idf).shape)
 
-        self.documents_matrix = tf * idf # (m x n) * (1 x n). As they are ndarrays, each line in tf will be multiplied by idf row wise, keeping a m x n ndarray as result.
+        self.documents_matrix = self.tf * self.idf # (m x n) * (1 x n). As they are ndarrays, each line in tf will be multiplied by idf row wise, keeping a m x n ndarray as result.
 
         print(self.documents_matrix.shape)
 
@@ -117,7 +117,13 @@ class Indexer:
     def save_model(self):
         logging.info("Saving the TF-IDF matrix.")
 
-        model = VectorModel(self.words_list, self.document_ids, self.documents_matrix)
+        model = VectorModel(
+            self.words_list, 
+            self.document_ids, 
+            self.documents_matrix, 
+            self.tf, 
+            self.idf
+        )
         
         with open(self.configs["ESCREVA"][0], "wb") as file:
             #np.save(file, self.documents_matrix)
@@ -133,36 +139,83 @@ class Indexer:
 
 
 class VectorModel:
-    def __init__(self, words_list, document_ids, documents_matrix, use_thresold = True):
+    def __init__(self, words_list, document_ids, documents_matrix, tf, idf, use_thresold = True):
         self.words_list = words_list
         self.documents_matrix = documents_matrix
         self.document_ids = document_ids
         self.use_thresold = use_thresold
-        self.similarity_threshold = 0.7071
+        self.threshold = 0.7071
+        self.tf = tf
+        self.idf = idf
 
     def generate_query_vector(self, query):
         text = query.upper()
         tokenizer = RegexpTokenizer(r'[a-zA-Z]{3,}') #\w*
-        words_list = tokenizer.tokenize(unidecode(text))
+        query_words_list = tokenizer.tokenize(unidecode(text))
+
+        query_vector = np.zeros(len(self.words_list))
+
+        query_words_frequency = {}
+
+        for word in query_words_list:
+            if word not in query_words_frequency:
+                query_words_frequency[word] = 1
+            else:
+                query_words_frequency[word] += 1
+
+        max_word_frequency = max(query_words_frequency.values())
+        sum_words_frequency = sum(query_words_frequency.values())
+
+        for word in query_words_frequency.keys():
+            word_position = None
+
+            try:
+                word_position = self.words_list.index(word)
+            except ValueError:
+                print("Word %s present in the query but not present in the words list." % (word))
+                continue
+
+            #weight = query_words_frequency[word] / sum_words_frequency
+            weight = (0.5 * ((0.5 * query_words_frequency[word]) / max_word_frequency)) * self.idf[word_position]
+
+            query_vector[word_position] = weight
+
+        return query_vector
+
 
     def generate_result(self, similarity, threshold):
         if threshold is None:
             threshold = self.threshold
 
-        results = {}
+        partial_results = {}
+        results = []
+        partial_results = 0
 
-        for i in range(len(similarity):
-            if self.use_thresold and score
+        for i in range(len(similarity)):
+            if self.use_thresold and similarity[i] < threshold:
+                continue
 
+            results[self.document_ids[i]] = similarity[i]
 
-    def evaluate_query(self, query, threshold = None):
-        query_vector = self.generate_query_vector(query)
+        for document_id in sorted(partial_results, key = partial_results.get, reverse = True):
+            partial_results += 1
+            results.append([rank_position, document_id, partial_results[document_id]])
+
+        return results
+
+    def calculate_similarity(self, query_vector):
         similarity = []
 
         for i in range(len(self.document_ids)):
             similarity.append(sum(self.documents_matrix[i, :] * query_vector)/(np.linalg.norm(self.documents_matrix[i, :]) * np.linalg.norm(query_vector)))
 
-        self.
+
+
+
+    def evaluate_query(self, query, threshold = None):
+        query_vector = self.generate_query_vector(query)
+        similarity = self.calculate_similarity(query_vector)
+        return self.generate_result(similarity, threshold)
 
 
 
