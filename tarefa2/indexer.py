@@ -117,13 +117,11 @@ class Indexer:
     def save_model(self):
         logging.info("Saving the TF-IDF matrix.")
 
-        data = {
-            "document_ids": self.document_ids,
-            "documents_matrix": self.documents_matrix
-        }
+        model = VectorModel(self.words_list, self.document_ids, self.documents_matrix)
+        
         with open(self.configs["ESCREVA"][0], "wb") as file:
             #np.save(file, self.documents_matrix)
-            pickle.dump(data, file)
+            pickle.dump(model, file)
 
         logging.info("TF-IDFs matrix saved to file: " + self.configs["ESCREVA"][0])
 
@@ -132,6 +130,45 @@ class Indexer:
         self.retrieve_words_list()
         self.calculate_tf_idf()
         self.save_model()
+
+
+class VectorModel:
+    def __init__(self, words_list, document_ids, documents_matrix, use_thresold = True):
+        self.words_list = words_list
+        self.documents_matrix = documents_matrix
+        self.document_ids = document_ids
+        self.use_thresold = use_thresold
+        self.similarity_threshold = 0.7071
+
+    def generate_query_vector(self, query):
+        text = query.upper()
+        tokenizer = RegexpTokenizer(r'[a-zA-Z]{3,}') #\w*
+        words_list = tokenizer.tokenize(unidecode(text))
+
+    def generate_result(self, similarity, threshold):
+        if threshold is None:
+            threshold = self.threshold
+
+        results = {}
+
+        for i in range(len(similarity):
+            if self.use_thresold and score
+
+
+    def evaluate_query(self, query, threshold = None):
+        query_vector = self.generate_query_vector(query)
+        similarity = []
+
+        for i in range(len(self.document_ids)):
+            similarity.append(sum(self.documents_matrix[i, :] * query_vector)/(np.linalg.norm(self.documents_matrix[i, :]) * np.linalg.norm(query_vector)))
+
+        self.
+
+
+
+
+
+
 
 indexer = Indexer()
 indexer.run()
