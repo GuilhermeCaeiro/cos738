@@ -11,7 +11,7 @@ class Searcher:
         self.model = None
         self.queries = {}
 
-        logging.basicConfig(filename='execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='result/execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         self.read_config()
 
@@ -27,14 +27,14 @@ class Searcher:
                     logging.warning("Unexpected parameter in configurations' file: " + line[0])
                     continue
 
-                print(line)
+                #print(line)
 
                 if line[0] in self.configs:
                     self.configs[line[0]].append(line[1])
                 else:
                     self.configs[line[0]] = [line[1]]
 
-        print(self.configs)
+        #print(self.configs)
 
         if ("MODELO" not in self.configs) or ("CONSULTAS" not in self.configs) or ("RESULTADOS" not in self.configs):
             logging.error("Malformed gli.cfg. 'MODELO' or 'CONSULTAS' or 'RESULTADOS' absent.")

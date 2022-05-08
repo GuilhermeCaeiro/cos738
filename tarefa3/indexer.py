@@ -16,7 +16,7 @@ class Indexer:
         self.number_of_documents = None
         self.document_ids = set()
 
-        logging.basicConfig(filename='execution.log', format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='result/execution.log', format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         self.read_config()
 
@@ -32,14 +32,14 @@ class Indexer:
                     logging.warning("Unexpected parameter in configurations' file: " + line[0])
                     continue
 
-                print(line)
+                #print(line)
 
                 if line[0] in self.configs:
                     self.configs[line[0]].append(line[1])
                 else:
                     self.configs[line[0]] = [line[1]]
 
-        print(self.configs)
+        #print(self.configs)
 
         if ("LEIA" not in self.configs) or ("ESCREVA" not in self.configs):
             logging.error("Malformed gli.cfg. 'LEIA' or 'ESCREVA' absent.")
@@ -114,11 +114,11 @@ class Indexer:
         self.idf = self.calculate_idf()
         self.tf = self.calculate_tf()
 
-        print(self.tf.shape, self.idf.shape, np.diag(self.idf).shape)
+        #print(self.tf.shape, self.idf.shape, np.diag(self.idf).shape)
 
         self.documents_matrix = self.tf * self.idf # (m x n) * (1 x n). As they are ndarrays, each line in tf will be multiplied by idf row wise, keeping a m x n ndarray as result.
 
-        print(self.documents_matrix.shape)
+        #print(self.documents_matrix.shape)
 
         logging.info("Finished calculating matrix of the TF-IDFs. Total time: %f seconds." % (time.time() - start_time))
 
@@ -180,7 +180,8 @@ class VectorModel:
             try:
                 word_position = self.words_list.index(word)
             except ValueError:
-                print("Word %s present in the query but not present in the words list." % (word))
+                #print("Word %s present in the query but not present in the words list." % (word))
+                logging.warning("Word %s present in the query but not present in the words list." % (word))
                 continue
 
             weight = query_words_frequency[word] / sum_words_frequency
@@ -200,7 +201,7 @@ class VectorModel:
         results = []
         rank_position = 0
 
-        print(type(similarity), len(similarity))
+        #print(type(similarity), len(similarity))
 
         for i in range(len(similarity)):
             if self.use_thresold and similarity[i] < threshold:

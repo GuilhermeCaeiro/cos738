@@ -9,7 +9,7 @@ class QueryProcessor:
         self.configs = {}
         self.queries = {}
 
-        logging.basicConfig(filename='execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='result/execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         self.read_config()
 
@@ -25,14 +25,14 @@ class QueryProcessor:
                     logging.warning("Unexpected parameter in configurations' file: " + line[0])
                     continue
 
-                print(line)
+                #print(line)
 
                 if line[0] in self.configs:
                     self.configs[line[0]].append(line[1])
                 else:
                     self.configs[line[0]] = [line[1]]
 
-        print(self.configs)
+        #print(self.configs)
 
         if ("LEIA" not in self.configs) or ("CONSULTAS" not in self.configs) or ("ESPERADOS" not in self.configs):
             logging.error("Malformed gli.cfg. 'LEIA' or 'CONSULTAS' or 'ESPERADOS' absent.")
@@ -96,7 +96,7 @@ class QueryProcessor:
     def write_expected_results(self):
         logging.info("Writing expected results.")
         if len(self.queries.keys()) == 0:
-            print("Method 'read_and_write_queries' must be executed first.")
+            #print("Method 'read_and_write_queries' must be executed first.")
             logging.error("Method 'read_and_write_queries' must be executed first.")
             return
 

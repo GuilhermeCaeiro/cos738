@@ -9,7 +9,7 @@ class InvertedListGenerator:
         self.configs = {}
         self.input_documents = {}
         self.inverted_list = {}
-        logging.basicConfig(filename='execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='result/execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         logging.info("Starting Inverted List Generator.")
 
@@ -27,14 +27,14 @@ class InvertedListGenerator:
                     logging.warning("Unexpected parameter in configurations' file: " + line[0])
                     continue
 
-                print(line)
+                #print(line)
 
                 if line[0] in self.configs:
                     self.configs[line[0]].append(line[1])
                 else:
                     self.configs[line[0]] = [line[1]]
 
-        print(self.configs)
+        #print(self.configs)
 
         if ("LEIA" not in self.configs) or ("ESCREVA" not in self.configs):
             logging.error("Malformed gli.cfg. 'LEIA' or 'ESCREVA' absent.")
