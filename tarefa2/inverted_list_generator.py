@@ -9,7 +9,7 @@ class InvertedListGenerator:
         self.configs = {}
         self.input_documents = {}
         self.inverted_list = {}
-        logging.basicConfig(filename='inverted_list_generator.log', format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         logging.info("Starting Inverted List Generator.")
 
@@ -81,6 +81,9 @@ class InvertedListGenerator:
 
     def generate_inverted_list(self):
         logging.info("Generating inverted list.")
+
+        total_documents = 0
+
         for document_id in sorted(self.input_documents.keys()):
             text = self.input_documents[document_id].upper()
             tokenizer = RegexpTokenizer(r'[a-zA-Z]{3,}') #\w*
@@ -91,20 +94,25 @@ class InvertedListGenerator:
                     self.inverted_list[word] = []
 
                 self.inverted_list[word].append(document_id)
-        logging.info("Inverted list generated. Number of keys: " + str(len(self.inverted_list)))
+
+            total_documents += 1
+
+        logging.info("Inverted list generated from %d documents, with %d terms considered." % (total_documents, len(self.inverted_list)))
 
     def save_inverted_list(self):
         logging.info("Saving inverted list to " + self.configs["ESCREVA"][0])
 
-        #open(self.configs["ESCREVA"][0], "w").close() # clearing existing file
-        
+        total_terms = 0
+
         with open(self.configs["ESCREVA"][0], "w") as file:
             for term in sorted(self.inverted_list.keys()):
                 indexes = ",".join(str(num) for num in sorted(self.inverted_list[term]))
                 indexes = "[" + indexes + "]"
 
                 file.write(term + ";" + indexes + "\n")
-        logging.info("Saved inverted list to " + self.configs["ESCREVA"][0])
+
+                total_terms += 1
+        logging.info("%d terms written. Saved inverted list to '%s'" % (total_terms, self.configs["ESCREVA"][0]))
 
     def run(self):
         self.read_input_files()

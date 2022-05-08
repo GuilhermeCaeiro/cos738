@@ -1,6 +1,7 @@
 import numpy as np
 import logging
 import pickle
+import time
 from indexer import VectorModel
 
 class Searcher:
@@ -10,13 +11,13 @@ class Searcher:
         self.model = None
         self.queries = {}
 
-        logging.basicConfig(filename='indexer.log', format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         self.read_config()
 
     def read_config(self):
         config_file = "busca.cfg"
-        logging.info("Reading configurations' file.")
+        logging.info("Reading configurations' file '%s'." % config_file)
 
         with open(config_file, "r") as file:
             for line in file:
@@ -44,10 +45,14 @@ class Searcher:
             raise Exception("Malformed gli.cfg. 'MODELO' or 'CONSULTAS' or 'RESULTADOS' found more than once.")
 
     def load_model(self):
+        logging.info("Loading model.")
         with open(self.configs["MODELO"][0],'rb') as file: 
             self.model = pickle.load(file)
+        logging.info("Model loaded.")
 
     def load_queries(self):
+        logging.info("Loading queries.")
+        total_queries = 0
         with open(self.configs["CONSULTAS"][0],'r') as file:
             header_line = True
             for line in file:
@@ -57,7 +62,14 @@ class Searcher:
                 query_data = line.split(";")
                 self.queries[query_data[0]] = query_data[1]
 
+                total_queries += 1
+        logging.info("%d queries loaded." % total_queries)
+
     def run_queries(self):
+        logging.info("Running queries.")
+        total_queries = 0
+        total_execution_time = time.time()
+
         with open(self.configs["RESULTADOS"][0],'w') as file:
             for query_id in sorted(self.queries.keys()):
                 # query_results -> [rank_position, document_id, partial_results[document_id]]
@@ -65,6 +77,10 @@ class Searcher:
 
                 for result in query_results:
                     file.write(str(query_id) + ";[" + str(result[0]) + "," + str(result[1]) + "," + str(result[2]) + "]\n")
+
+                total_queries += 1
+
+        logging.info("%d queries executed in %f seconds." % (total_queries, time.time() - total_execution_time))
 
     def run(self):
         self.load_model()

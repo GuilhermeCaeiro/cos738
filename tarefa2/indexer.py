@@ -1,6 +1,7 @@
 import numpy as np
 import logging
 import pickle
+import time
 from nltk.tokenize import RegexpTokenizer
 from unidecode import unidecode
 
@@ -15,7 +16,7 @@ class Indexer:
         self.number_of_documents = None
         self.document_ids = set()
 
-        logging.basicConfig(filename='indexer.log', format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='execution.log', format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         self.read_config()
 
@@ -64,6 +65,8 @@ class Indexer:
 
     def calculate_tf(self):
         logging.info("Calculating tf (term frequency) for all documents.")
+        start_time = time.time()
+
         tf_matrix = np.zeros((self.number_of_documents, len(self.words_list)), dtype=float)
 
         for column in range(0, len(self.words_list)):
@@ -75,7 +78,7 @@ class Indexer:
         for i in range(self.number_of_documents):
             tf_matrix[i, :] = tf_matrix[i, :] / max(tf_matrix[i, :])
 
-        logging.info("Finished calculating tf for all documents.")
+        logging.info("Finished calculating tf for all documents. Total time: %f seconds." % (time.time() - start_time))
 
         return tf_matrix
 
@@ -83,6 +86,7 @@ class Indexer:
         logging.info("Calculating idf (inverse document frequency) for all documents.")
 
         idfs = []
+        start_time = time.time()
 
         for word in self.words_list:
             documents = set(self.inverted_list[word])
@@ -96,7 +100,7 @@ class Indexer:
 
         idfs = np.log(self.number_of_documents / np.array([idfs])) # the log will be calculated for each member of the matrix
 
-        logging.info("Finished calculating idf for all documents.")
+        logging.info("Finished calculating idf for all documents. Total time: %f seconds." % (time.time() - start_time))
 
         return idfs
 
@@ -104,6 +108,8 @@ class Indexer:
 
     def calculate_tf_idf(self):
         logging.info("Calculating matrix of the TF-IDFs.")
+
+        start_time = time.time()
 
         self.idf = self.calculate_idf()
         self.tf = self.calculate_tf()
@@ -114,7 +120,7 @@ class Indexer:
 
         print(self.documents_matrix.shape)
 
-        logging.info("Finished calculating matrix of the TF-IDFs.")
+        logging.info("Finished calculating matrix of the TF-IDFs. Total time: %f seconds." % (time.time() - start_time))
 
     def save_model(self):
         logging.info("Saving the TF-IDF matrix.")

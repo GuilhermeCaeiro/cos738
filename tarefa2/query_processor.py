@@ -9,13 +9,13 @@ class QueryProcessor:
         self.configs = {}
         self.queries = {}
 
-        logging.basicConfig(filename='indexer.log', format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(filename='execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
 
         self.read_config()
 
     def read_config(self):
         config_file = "pc.cfg"
-        logging.info("Reading configurations' file.")
+        logging.info("Reading configurations' file '%s'." % config_file)
 
         with open(config_file, "r") as file:
             for line in file:
@@ -55,6 +55,8 @@ class QueryProcessor:
         tree = ET.parse(query_file)
         root = tree.getroot()
 
+        total_queries = 0
+
         for query in root.iter("QUERY"):
             query_number = int(query.find("QueryNumber").text)
             query_text = query.find("QueryText").text.strip().replace("\n", "").replace(";", "")
@@ -84,25 +86,35 @@ class QueryProcessor:
 
             self.queries[query_number]["expected_results"] = expected_results
 
+            total_queries += 1
+
 
         processed_queries_file.close()
 
-        logging.info("Total documents read: " + str(""))
+        logging.info("%d queries read and written to %s." % (total_queries, self.configs["CONSULTAS"][0]))
 
     def write_expected_results(self):
+        logging.info("Writing expected results.")
         if len(self.queries.keys()) == 0:
             print("Method 'read_and_write_queries' must be executed first.")
+            logging.error("Method 'read_and_write_queries' must be executed first.")
             return
 
         expected_results_file = open(self.configs["ESPERADOS"][0], "w")
         expected_results_file.write("QueryNumber;DocNumber;DocVotes\n")
+
+        total_results = 0
 
         for query_number in sorted(self.queries.keys()):
             expected_results = self.queries[query_number]["expected_results"]
             for document_number in sorted(expected_results, key = expected_results.get, reverse = True):
                 expected_results_file.write(str(query_number) + ";" + str(document_number) + ";" + str(expected_results[document_number]) + "\n")
 
+                total_results += 1
+
         expected_results_file.close()
+
+        logging.info("%d expected results written to '%s'." % (total_results, self.configs["ESPERADOS"][0]))
     
     def run(self):
         self.read_and_write_queries()
