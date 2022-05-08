@@ -1,6 +1,7 @@
 import numpy as np
 import logging
 import pickle
+from indexer import VectorModel
 
 class Searcher:
 
@@ -14,7 +15,7 @@ class Searcher:
         self.read_config()
 
     def read_config(self):
-        config_file = "index.cfg"
+        config_file = "busca.cfg"
         logging.info("Reading configurations' file.")
 
         with open(config_file, "r") as file:
@@ -48,5 +49,29 @@ class Searcher:
 
     def load_queries(self):
         with open(self.configs["CONSULTAS"][0],'r') as file:
-            for line in  file:
-                self.queries.append() 
+            header_line = True
+            for line in file:
+                if header_line:
+                    header_line = False
+                    continue
+                query_data = line.split(";")
+                self.queries[query_data[0]] = query_data[1]
+
+    def run_queries(self):
+        with open(self.configs["RESULTADOS"][0],'w') as file:
+            for query_id in sorted(self.queries.keys()):
+                # query_results -> [rank_position, document_id, partial_results[document_id]]
+                query_results = self.model.evaluate_query(self.queries[query_id])
+
+                for result in query_results:
+                    file.write(str(result[0]) + ";" + str(result[1]) + ";" + str(result[2]) + "\n")
+
+    def run(self):
+        self.load_model()
+        self.load_queries()
+        self.run_queries()
+
+
+searcher = Searcher()
+searcher.run()
+

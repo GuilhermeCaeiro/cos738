@@ -1,6 +1,8 @@
 import numpy as np
 import logging
 import pickle
+from nltk.tokenize import RegexpTokenizer
+from unidecode import unidecode
 
 class Indexer:
 
@@ -139,12 +141,12 @@ class Indexer:
 
 
 class VectorModel:
-    def __init__(self, words_list, document_ids, documents_matrix, tf, idf, use_thresold = True):
+    def __init__(self, words_list, document_ids, documents_matrix, tf, idf, threshold = 0.7071, use_thresold = True):
         self.words_list = words_list
         self.documents_matrix = documents_matrix
         self.document_ids = document_ids
         self.use_thresold = use_thresold
-        self.threshold = 0.7071
+        self.threshold = threshold
         self.tf = tf
         self.idf = idf
 
@@ -175,8 +177,8 @@ class VectorModel:
                 print("Word %s present in the query but not present in the words list." % (word))
                 continue
 
-            #weight = query_words_frequency[word] / sum_words_frequency
-            weight = (0.5 * ((0.5 * query_words_frequency[word]) / max_word_frequency)) * self.idf[word_position]
+            weight = query_words_frequency[word] / sum_words_frequency
+            #weight = (0.5 * ((0.5 * query_words_frequency[word]) / max_word_frequency)) * self.idf[word_position]
 
             query_vector[word_position] = weight
 

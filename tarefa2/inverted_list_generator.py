@@ -96,9 +96,9 @@ class InvertedListGenerator:
     def save_inverted_list(self):
         logging.info("Saving inverted list to " + self.configs["ESCREVA"][0])
 
-        open(self.configs["ESCREVA"][0], "w").close() # clearing existing file
+        #open(self.configs["ESCREVA"][0], "w").close() # clearing existing file
         
-        with open(self.configs["ESCREVA"][0], "a") as file:
+        with open(self.configs["ESCREVA"][0], "w") as file:
             for term in sorted(self.inverted_list.keys()):
                 indexes = ",".join(str(num) for num in sorted(self.inverted_list[term]))
                 indexes = "[" + indexes + "]"

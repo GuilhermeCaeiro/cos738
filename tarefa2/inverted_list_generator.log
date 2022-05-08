@@ -1,33 +1,11 @@
-05/01/2022 17:02:35 Starting Inverted List Generator.
-05/01/2022 17:02:35 Reading configurations' file.
-05/01/2022 17:02:35 Reading file data/cf74.xml
-05/01/2022 17:02:35 Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 17:02:35 Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 17:02:35 Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 17:02:35 Total documents read: 164
-05/01/2022 17:02:35 Generating inverted list.
-05/01/2022 17:02:35 Inverted list generated. Number of keys: 3615
-05/01/2022 17:02:35 Saving inverted list to inverted_list.csv
-05/01/2022 17:02:35 Saved inverted list to inverted_list.csv
-05/01/2022 18:56:12 Starting Inverted List Generator.
-05/01/2022 18:56:12 Reading configurations' file.
-05/01/2022 18:56:12 Reading file data/cf74.xml
-05/01/2022 18:56:12 Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 18:56:12 Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 18:56:12 Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 18:56:12 Total documents read: 164
-05/01/2022 18:56:12 Generating inverted list.
-05/01/2022 18:56:12 Inverted list generated. Number of keys: 152
-05/01/2022 18:56:12 Saving inverted list to inverted_list.csv
-05/01/2022 18:56:12 Saved inverted list to inverted_list.csv
-05/01/2022 18:58:07 Starting Inverted List Generator.
-05/01/2022 18:58:07 Reading configurations' file.
-05/01/2022 18:58:07 Reading file data/cf74.xml
-05/01/2022 18:58:07 Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 18:58:07 Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 18:58:07 Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-05/01/2022 18:58:07 Total documents read: 164
-05/01/2022 18:58:07 Generating inverted list.
-05/01/2022 18:58:07 Inverted list generated. Number of keys: 3385
-05/01/2022 18:58:07 Saving inverted list to inverted_list.csv
-05/01/2022 18:58:07 Saved inverted list to inverted_list.csv
+05/07/2022 20:38:10 Starting Inverted List Generator.
+05/07/2022 20:38:10 Reading configurations' file.
+05/07/2022 20:38:10 Reading file data/cf74.xml
+05/07/2022 20:38:10 Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+05/07/2022 20:38:10 Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+05/07/2022 20:38:10 Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+05/07/2022 20:38:10 Total documents read: 164
+05/07/2022 20:38:10 Generating inverted list.
+05/07/2022 20:38:10 Inverted list generated. Number of keys: 3385
+05/07/2022 20:38:10 Saving inverted list to inverted_list.csv
+05/07/2022 20:38:10 Saved inverted list to inverted_list.csv
