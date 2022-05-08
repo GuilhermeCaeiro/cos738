@@ -68,19 +68,24 @@ class Searcher:
     def run_queries(self):
         logging.info("Running queries.")
         total_queries = 0
-        total_execution_time = time.time()
+        start_time = time.time()
+        individual_query_times = []
 
         with open(self.configs["RESULTADOS"][0],'w') as file:
             for query_id in sorted(self.queries.keys()):
+                query_start_time = time.time()
+
                 # query_results -> [rank_position, document_id, partial_results[document_id]]
                 query_results = self.model.evaluate_query(self.queries[query_id])
+
+                individual_query_times.append(time.time() - query_start_time)
 
                 for result in query_results:
                     file.write(str(query_id) + ";[" + str(result[0]) + "," + str(result[1]) + "," + str(result[2]) + "]\n")
 
                 total_queries += 1
 
-        logging.info("%d queries executed in %f seconds." % (total_queries, time.time() - total_execution_time))
+        logging.info("%d queries executed in %f seconds, with average query execution time of %f seconds." % (total_queries, time.time() - start_time, np.mean(individual_query_times)))
 
     def run(self):
         self.load_model()
