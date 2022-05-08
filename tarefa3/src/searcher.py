@@ -2,7 +2,7 @@ import numpy as np
 import logging
 import pickle
 import time
-from indexer import VectorModel
+from .indexer import VectorModel
 
 class Searcher:
 

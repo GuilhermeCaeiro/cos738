@@ -1,7 +1,7 @@
-from inverted_list_generator import InvertedListGenerator
-from indexer import Indexer
-from searcher import Searcher
-from query_processor import QueryProcessor
+from src.inverted_list_generator import InvertedListGenerator
+from src.indexer import Indexer
+from src.searcher import Searcher
+from src.query_processor import QueryProcessor
 
 InvertedListGenerator().run()
 Indexer().run()
