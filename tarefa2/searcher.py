@@ -64,7 +64,7 @@ class Searcher:
                 query_results = self.model.evaluate_query(self.queries[query_id])
 
                 for result in query_results:
-                    file.write(str(result[0]) + ";" + str(result[1]) + ";" + str(result[2]) + "\n")
+                    file.write(str(query_id) + ";[" + str(result[0]) + "," + str(result[1]) + "," + str(result[2]) + "]\n")
 
     def run(self):
         self.load_model()
@@ -72,6 +72,6 @@ class Searcher:
         self.run_queries()
 
 
-searcher = Searcher()
-searcher.run()
+#searcher = Searcher()
+#searcher.run()
 

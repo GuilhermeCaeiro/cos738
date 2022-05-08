@@ -108,5 +108,5 @@ class QueryProcessor:
         self.read_and_write_queries()
         self.write_expected_results()
 
-query_processor = QueryProcessor()
-query_processor.run()
+#query_processor = QueryProcessor()
+#query_processor.run()

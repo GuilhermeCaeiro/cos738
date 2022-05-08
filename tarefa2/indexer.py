@@ -141,7 +141,7 @@ class Indexer:
 
 
 class VectorModel:
-    def __init__(self, words_list, document_ids, documents_matrix, tf, idf, threshold = 0.7071, use_thresold = True):
+    def __init__(self, words_list, document_ids, documents_matrix, tf, idf, threshold = 0.7071, use_thresold = False):
         self.words_list = words_list
         self.documents_matrix = documents_matrix
         self.document_ids = document_ids
@@ -179,6 +179,7 @@ class VectorModel:
 
             weight = query_words_frequency[word] / sum_words_frequency
             #weight = (0.5 * ((0.5 * query_words_frequency[word]) / max_word_frequency)) * self.idf[word_position]
+            #print(len(query_words_frequency), self.idf.shape)
 
             query_vector[word_position] = weight
 
@@ -191,16 +192,18 @@ class VectorModel:
 
         partial_results = {}
         results = []
-        partial_results = 0
+        rank_position = 0
+
+        print(type(similarity), len(similarity))
 
         for i in range(len(similarity)):
             if self.use_thresold and similarity[i] < threshold:
                 continue
 
-            results[self.document_ids[i]] = similarity[i]
+            partial_results[self.document_ids[i]] = similarity[i]
 
         for document_id in sorted(partial_results, key = partial_results.get, reverse = True):
-            partial_results += 1
+            rank_position += 1
             results.append([rank_position, document_id, partial_results[document_id]])
 
         return results
@@ -211,6 +214,7 @@ class VectorModel:
         for i in range(len(self.document_ids)):
             similarity.append(sum(self.documents_matrix[i, :] * query_vector)/(np.linalg.norm(self.documents_matrix[i, :]) * np.linalg.norm(query_vector)))
 
+        return similarity
 
 
 
@@ -225,5 +229,5 @@ class VectorModel:
 
 
 
-indexer = Indexer()
-indexer.run()
+#indexer = Indexer()
+#indexer.run()

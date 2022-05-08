@@ -162,3 +162,103 @@
 05/07/2022 21:08:18 Saving the TF-IDF matrix.
 05/07/2022 21:08:18 TF-IDFs matrix saved to file: vecmodel.pkl
 05/07/2022 21:08:18 Reading configurations' file.
+05/07/2022 21:32:15 Reading configurations' file.
+05/07/2022 21:32:15 Loading inverted list.
+05/07/2022 21:32:15 Inverted list loaded.
+05/07/2022 21:32:15 Calculating matrix of the TF-IDFs.
+05/07/2022 21:32:15 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 21:32:15 Finished calculating idf for all documents.
+05/07/2022 21:32:15 Calculating tf (term frequency) for all documents.
+05/07/2022 21:32:15 Finished calculating tf for all documents.
+05/07/2022 21:32:15 Finished calculating matrix of the TF-IDFs.
+05/07/2022 21:32:15 Saving the TF-IDF matrix.
+05/07/2022 21:32:15 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 21:32:15 Reading configurations' file.
+05/07/2022 21:39:17 Reading configurations' file.
+05/07/2022 21:39:17 Loading inverted list.
+05/07/2022 21:39:18 Inverted list loaded.
+05/07/2022 21:39:18 Calculating matrix of the TF-IDFs.
+05/07/2022 21:39:18 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 21:39:18 Finished calculating idf for all documents.
+05/07/2022 21:39:18 Calculating tf (term frequency) for all documents.
+05/07/2022 21:39:18 Finished calculating tf for all documents.
+05/07/2022 21:39:18 Finished calculating matrix of the TF-IDFs.
+05/07/2022 21:39:18 Saving the TF-IDF matrix.
+05/07/2022 21:39:18 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 21:39:18 Reading configurations' file.
+05/07/2022 21:43:36 Reading configurations' file.
+05/07/2022 21:43:36 Loading inverted list.
+05/07/2022 21:43:36 Inverted list loaded.
+05/07/2022 21:43:36 Calculating matrix of the TF-IDFs.
+05/07/2022 21:43:36 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 21:43:36 Finished calculating idf for all documents.
+05/07/2022 21:43:36 Calculating tf (term frequency) for all documents.
+05/07/2022 21:43:37 Finished calculating tf for all documents.
+05/07/2022 21:43:37 Finished calculating matrix of the TF-IDFs.
+05/07/2022 21:43:37 Saving the TF-IDF matrix.
+05/07/2022 21:43:37 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 21:43:37 Reading configurations' file.
+05/07/2022 21:44:55 Reading configurations' file.
+05/07/2022 21:44:55 Loading inverted list.
+05/07/2022 21:44:55 Inverted list loaded.
+05/07/2022 21:44:55 Calculating matrix of the TF-IDFs.
+05/07/2022 21:44:55 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 21:44:55 Finished calculating idf for all documents.
+05/07/2022 21:44:55 Calculating tf (term frequency) for all documents.
+05/07/2022 21:44:55 Finished calculating tf for all documents.
+05/07/2022 21:44:55 Finished calculating matrix of the TF-IDFs.
+05/07/2022 21:44:55 Saving the TF-IDF matrix.
+05/07/2022 21:44:55 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 21:44:55 Reading configurations' file.
+05/07/2022 21:46:09 Reading configurations' file.
+05/07/2022 21:46:09 Loading inverted list.
+05/07/2022 21:46:09 Inverted list loaded.
+05/07/2022 21:46:09 Calculating matrix of the TF-IDFs.
+05/07/2022 21:46:09 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 21:46:09 Finished calculating idf for all documents.
+05/07/2022 21:46:09 Calculating tf (term frequency) for all documents.
+05/07/2022 21:46:09 Finished calculating tf for all documents.
+05/07/2022 21:46:09 Finished calculating matrix of the TF-IDFs.
+05/07/2022 21:46:09 Saving the TF-IDF matrix.
+05/07/2022 21:46:09 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 21:46:09 Reading configurations' file.
+05/07/2022 22:34:14 Reading configurations' file.
+05/07/2022 22:34:14 Loading inverted list.
+05/07/2022 22:34:14 Inverted list loaded.
+05/07/2022 22:34:14 Calculating matrix of the TF-IDFs.
+05/07/2022 22:34:14 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 22:34:14 Finished calculating idf for all documents.
+05/07/2022 22:34:14 Calculating tf (term frequency) for all documents.
+05/07/2022 22:34:14 Finished calculating tf for all documents.
+05/07/2022 22:34:14 Finished calculating matrix of the TF-IDFs.
+05/07/2022 22:34:14 Saving the TF-IDF matrix.
+05/07/2022 22:34:14 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 22:34:14 Reading configurations' file.
+05/07/2022 22:42:27 Reading configurations' file.
+05/07/2022 22:42:27 Loading inverted list.
+05/07/2022 22:43:49 Reading configurations' file.
+05/07/2022 22:43:49 Reading file data/cfquery.xml
+05/07/2022 22:43:49 Total documents read: 
+05/07/2022 22:44:14 Reading configurations' file.
+05/07/2022 22:44:14 Loading inverted list.
+05/07/2022 22:44:14 Inverted list loaded.
+05/07/2022 22:44:14 Calculating matrix of the TF-IDFs.
+05/07/2022 22:44:14 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 22:44:14 Finished calculating idf for all documents.
+05/07/2022 22:44:14 Calculating tf (term frequency) for all documents.
+05/07/2022 22:44:16 Finished calculating tf for all documents.
+05/07/2022 22:44:16 Finished calculating matrix of the TF-IDFs.
+05/07/2022 22:44:16 Saving the TF-IDF matrix.
+05/07/2022 22:44:17 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 22:44:36 Reading configurations' file.
+05/07/2022 22:44:36 Loading inverted list.
+05/07/2022 22:44:36 Inverted list loaded.
+05/07/2022 22:44:36 Calculating matrix of the TF-IDFs.
+05/07/2022 22:44:36 Calculating idf (inverse document frequency) for all documents.
+05/07/2022 22:44:36 Finished calculating idf for all documents.
+05/07/2022 22:44:36 Calculating tf (term frequency) for all documents.
+05/07/2022 22:44:38 Finished calculating tf for all documents.
+05/07/2022 22:44:38 Finished calculating matrix of the TF-IDFs.
+05/07/2022 22:44:38 Saving the TF-IDF matrix.
+05/07/2022 22:44:39 TF-IDFs matrix saved to file: vecmodel.pkl
+05/07/2022 22:44:39 Reading configurations' file.

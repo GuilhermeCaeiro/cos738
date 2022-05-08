@@ -111,5 +111,5 @@ class InvertedListGenerator:
         self.generate_inverted_list()
         self.save_inverted_list()
 
-inverted_list_generator = InvertedListGenerator()
-inverted_list_generator.run()
+#inverted_list_generator = InvertedListGenerator()
+#inverted_list_generator.run()
