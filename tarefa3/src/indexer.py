@@ -2,6 +2,7 @@ import numpy as np
 import logging
 import pickle
 import time
+import sys
 from nltk.tokenize import RegexpTokenizer
 from unidecode import unidecode
 
@@ -16,7 +17,15 @@ class Indexer:
         self.number_of_documents = None
         self.document_ids = set()
 
-        logging.basicConfig(filename='result/execution.log', format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(
+            handlers=[
+                logging.FileHandler("result/execution.log"),
+                logging.StreamHandler(sys.stdout)
+            ],
+            format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", 
+            datefmt='%m/%d/%Y %H:%M:%S', 
+            level=logging.DEBUG
+        )
 
         self.read_config()
 
@@ -155,6 +164,16 @@ class VectorModel:
         self.threshold = threshold
         self.tf = tf
         self.idf = idf
+
+        logging.basicConfig(
+            handlers=[
+                logging.FileHandler("result/execution.log"),
+                logging.StreamHandler(sys.stdout)
+            ],
+            format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", 
+            datefmt='%m/%d/%Y %H:%M:%S', 
+            level=logging.DEBUG
+        )
 
     def generate_query_vector(self, query):
         text = query.upper()

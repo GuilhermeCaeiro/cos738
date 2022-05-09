@@ -1,5 +1,6 @@
 import os
 import logging
+import sys
 import xml.etree.ElementTree as ET
 from nltk.tokenize import RegexpTokenizer
 from unidecode import unidecode
@@ -9,7 +10,15 @@ class QueryProcessor:
         self.configs = {}
         self.queries = {}
 
-        logging.basicConfig(filename='result/execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(
+            handlers=[
+                logging.FileHandler("result/execution.log"),
+                logging.StreamHandler(sys.stdout)
+            ],
+            format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", 
+            datefmt='%m/%d/%Y %H:%M:%S', 
+            level=logging.DEBUG
+        )
 
         self.read_config()
 

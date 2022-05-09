@@ -2,6 +2,7 @@ import numpy as np
 import logging
 import pickle
 import time
+import sys
 from .indexer import VectorModel
 
 class Searcher:
@@ -11,7 +12,15 @@ class Searcher:
         self.model = None
         self.queries = {}
 
-        logging.basicConfig(filename='result/execution.log', format='[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.DEBUG)
+        logging.basicConfig(
+            handlers=[
+                logging.FileHandler("result/execution.log"),
+                logging.StreamHandler(sys.stdout)
+            ],
+            format="[%(asctime)s] [%(levelname)s] [%(module)s] %(message)s", 
+            datefmt='%m/%d/%Y %H:%M:%S', 
+            level=logging.DEBUG
+        )
 
         self.read_config()
 
