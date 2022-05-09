@@ -184,9 +184,9 @@ class VectorModel:
                 logging.warning("Word %s present in the query but not present in the words list." % (word))
                 continue
 
-            weight = query_words_frequency[word] / sum_words_frequency
-            #weight = (0.5 * ((0.5 * query_words_frequency[word]) / max_word_frequency)) * self.idf[word_position]
-            #print(len(query_words_frequency), self.idf.shape)
+            #weight = query_words_frequency[word] / sum_words_frequency
+            #print(len(query_words_frequency), self.idf.shape, self.idf)
+            weight = (0.5 * ((0.5 * query_words_frequency[word]) / max_word_frequency)) * self.idf[0, word_position]
 
             query_vector[word_position] = weight
 
@@ -222,6 +222,15 @@ class VectorModel:
             similarity.append(sum(self.documents_matrix[i, :] * query_vector)/(np.linalg.norm(self.documents_matrix[i, :]) * np.linalg.norm(query_vector)))
 
         return similarity
+
+    def print_tf_idf(self):
+        print(self.documents_matrix, "\n")
+
+    def print_tf(self):
+        print(self.tf, "\n")
+
+    def print_idf(self):
+        print(self.idf, "\n")
 
 
 

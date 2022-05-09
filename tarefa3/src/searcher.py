@@ -85,6 +85,10 @@ class Searcher:
 
                 total_queries += 1
 
+        #self.model.print_tf_idf()
+        #self.model.print_tf()
+        #self.model.print_idf()
+
         logging.info("%d queries executed in %f seconds, with average query execution time of %f seconds." % (total_queries, time.time() - start_time, np.mean(individual_query_times)))
 
     def run(self):

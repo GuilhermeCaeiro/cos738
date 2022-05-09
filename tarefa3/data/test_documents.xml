@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE FILE SYSTEM "cfc-2.dtd">
+<FILE>
+	<RECORD>
+		<RECORDNUM>00001</RECORDNUM>
+		<ABSTRACT>This is a sample text about something.</ABSTRACT>
+	</RECORD>
+	<RECORD>
+		<RECORDNUM>00002</RECORDNUM>
+		<ABSTRACT>This text talks about a topic of interest of many people.</ABSTRACT>
+	</RECORD>
+	<RECORD>
+		<RECORDNUM>00003</RECORDNUM>
+		<ABSTRACT>The legend of a guy who managed to rule this world. A true legend.</ABSTRACT>
+	</RECORD>
+</FILE>
