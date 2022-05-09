@@ -22,7 +22,7 @@ Examples of that can be found in the file run_all.py.
 
 # Dependencies
 
-A part from libraries included into Python's default library, this code also relies on "numpy", "nltk" and "unidecode" for a series of task. In order to install those libraries you can run:
+Apart from libraries included into Python's default library, this code also relies on "numpy", "nltk" and "unidecode" for a series of task. In order to install those libraries you can run:
 
 ```console
 pip install numpy nltk unidecode
