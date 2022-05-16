@@ -62,6 +62,11 @@ class Indexer:
             logging.error("Malformed gli.cfg. 'LEIA' or 'ESCREVA' found more than once.")
             raise Exception("Malformed gli.cfg. 'LEIA' or 'ESCREVA' found more than once.")
 
+        if "STEMMER" in self.configs:
+            logging.info("Using Potter Stemmer.")
+        else:
+            logging.info("Not using stemming.")
+
     def load_inverted_list(self):
         logging.info("Loading inverted list.")
         with open(self.configs["LEIA"][0], "r") as file:
@@ -143,7 +148,8 @@ class Indexer:
             self.document_ids, 
             self.documents_matrix, 
             self.tf, 
-            self.idf
+            self.idf,
+            True if "STEMMER" in self.configs else False
         )
         
         with open(self.configs["ESCREVA"][0], "wb") as file:
@@ -160,7 +166,7 @@ class Indexer:
 
 
 class VectorModel:
-    def __init__(self, words_list, document_ids, documents_matrix, tf, idf, threshold = 0.7071, use_thresold = False):
+    def __init__(self, words_list, document_ids, documents_matrix, tf, idf, use_stemming = False, threshold = 0.7071, use_thresold = False):
         self.words_list = words_list
         self.documents_matrix = documents_matrix
         self.document_ids = document_ids
@@ -168,6 +174,12 @@ class VectorModel:
         self.threshold = threshold
         self.tf = tf
         self.idf = idf
+        self.use_stemming = use_stemming
+
+        if self.use_stemming:
+            logging.info("Using Potter Stemmer in the Vector Model.")
+        else:
+            logging.info("Not using stemming in the Vector Model.")
 
         logging.basicConfig(
             handlers=[
@@ -184,12 +196,9 @@ class VectorModel:
         tokenizer = RegexpTokenizer(r'[a-zA-Z]{3,}') #\w*
         query_words_list = tokenizer.tokenize(unidecode(text))
 
-        if "STEMMER" in self.configs:
-            logging.info("Using Potter Stemmer.")
+        if self.use_stemming:
             stemmer = PorterStemmer()
-            query_words_list = [stemmer.stem(token) for token in query_words_list]
-        else:
-            logging.info("Not using stemming.")
+            query_words_list = [stemmer.stem(token).upper() for token in query_words_list]
 
         query_vector = np.zeros(len(self.words_list))
 

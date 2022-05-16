@@ -58,6 +58,11 @@ class InvertedListGenerator:
             logging.error("Malformed gli.cfg. 'ESCREVA' found more than once.")
             raise Exception("Malformed gli.cfg. 'ESCREVA' found more than once.")
 
+        if "STEMMER" in self.configs:
+            logging.info("Using Potter Stemmer.")
+        else:
+            logging.info("Not using stemming.")
+
     def read_input_files(self):
         num_documents = 0
 
@@ -104,11 +109,8 @@ class InvertedListGenerator:
             words_list = tokenizer.tokenize(unidecode(text))
 
             if "STEMMER" in self.configs:
-                logging.info("Using Potter Stemmer.")
                 stemmer = PorterStemmer()
-                words_list = [stemmer.stem(token) for token in words_list]
-            else:
-                logging.info("Not using stemming.")
+                words_list = [stemmer.stem(token).upper() for token in words_list]
 
             for word in words_list:
                 if word not in self.inverted_list:
