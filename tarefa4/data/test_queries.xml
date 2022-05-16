@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE FILEQUERY SYSTEM "cfcquery-2.dtd">
+<FILEQUERY>
+	<QUERY>
+		<QueryNumber>00001</QueryNumber>
+		<QueryText>What are the topics of interest? 
+		</QueryText>
+		<Results>00002</Results>
+		<Records>
+			<Item score="2222">2</Item>
+			<Item score="0011">1</Item>
+		</Records>
+	</QUERY>
+	<QUERY>
+		<QueryNumber>00002</QueryNumber>
+		<QueryText>A document about something. 
+		</QueryText>
+		<Results>00003</Results>
+		<Records>
+			<Item score="2222">1</Item>
+			<Item score="1222">2</Item>
+			<Item score="1222">3</Item>
+		</Records>
+	</QUERY>
+	<QUERY>
+		<QueryNumber>00003</QueryNumber>
+		<QueryText>Who rules this world? 
+		</QueryText>
+		<Results>00001</Results>
+		<Records>
+			<Item score="2221">3</Item>
+		</Records>
+	</QUERY>
+	<QUERY>
+		<QueryNumber>00004</QueryNumber>
+		<QueryText>Does the guy rule the world or something? 
+		</QueryText>
+		<Results>00001</Results>
+		<Records>
+			<Item score="2222">3</Item>
+			<Item score="1000">1</Item>
+		</Records>
+	</QUERY>
+	<QUERY>
+		<QueryNumber>00005</QueryNumber>
+		<QueryText>Does the guy rule something? 
+		</QueryText>
+		<Results>00002</Results>
+		<Records>
+			<Item score="2222">3</Item>
+			<Item score="1000">1</Item>
+		</Records>
+	</QUERY>
+</FILEQUERY>

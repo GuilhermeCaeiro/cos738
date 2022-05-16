@@ -1,0 +1,82 @@
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Starting Inverted List Generator.
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Reading configurations' file.
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Reading file data/cf74.xml
+[05/08/2022 13:39:29] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/08/2022 13:39:29] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/08/2022 13:39:29] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Total documents read: 164
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Reading file data/cf75.xml
+[05/08/2022 13:39:29] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/08/2022 13:39:29] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/08/2022 13:39:29] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Total documents read: 349
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Generating inverted list.
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Inverted list generated from 349 documents, with 5108 terms considered.
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
+[05/08/2022 13:39:29] [INFO] [inverted_list_generator] 5108 terms written. Saved inverted list to 'result/inverted_list.csv'
+[05/08/2022 13:39:29] [INFO] [indexer] Reading configurations' file.
+[05/08/2022 13:39:29] [INFO] [indexer] Loading inverted list.
+[05/08/2022 13:39:29] [INFO] [indexer] Inverted list loaded.
+[05/08/2022 13:39:29] [INFO] [indexer] Calculating matrix of the TF-IDFs.
+[05/08/2022 13:39:29] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
+[05/08/2022 13:39:29] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.004167 seconds.
+[05/08/2022 13:39:29] [INFO] [indexer] Calculating tf (term frequency) for all documents.
+[05/08/2022 13:39:30] [INFO] [indexer] Finished calculating tf for all documents. Total time: 0.270407 seconds.
+[05/08/2022 13:39:30] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 0.289443 seconds.
+[05/08/2022 13:39:30] [INFO] [indexer] Saving the TF-IDF matrix.
+[05/08/2022 13:39:30] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
+[05/08/2022 13:39:30] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
+[05/08/2022 13:39:30] [INFO] [query_processor] Reading file data/cfquery.xml
+[05/08/2022 13:39:30] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
+[05/08/2022 13:39:30] [INFO] [query_processor] Writing expected results.
+[05/08/2022 13:39:30] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
+[05/08/2022 13:39:30] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
+[05/08/2022 13:39:30] [INFO] [searcher] Loading model.
+[05/08/2022 13:39:30] [INFO] [searcher] Model loaded.
+[05/08/2022 13:39:30] [INFO] [searcher] Loading queries.
+[05/08/2022 13:39:30] [INFO] [searcher] 99 queries loaded.
+[05/08/2022 13:39:30] [INFO] [searcher] Running queries.
+[05/08/2022 13:39:31] [WARNING] [indexer] Word PLUG present in the query but not present in the words list.
+[05/08/2022 13:39:31] [WARNING] [indexer] Word INVASIVE present in the query but not present in the words list.
+[05/08/2022 13:39:33] [WARNING] [indexer] Word SALTS present in the query but not present in the words list.
+[05/08/2022 13:39:34] [WARNING] [indexer] Word METABOLIZE present in the query but not present in the words list.
+[05/08/2022 13:39:35] [WARNING] [indexer] Word INCOMPLETELY present in the query but not present in the words list.
+[05/08/2022 13:39:35] [WARNING] [indexer] Word MANIFESTED present in the query but not present in the words list.
+[05/08/2022 13:39:35] [WARNING] [indexer] Word CONCORDANCE present in the query but not present in the words list.
+[05/08/2022 13:39:35] [WARNING] [indexer] Word PAIRS present in the query but not present in the words list.
+[05/08/2022 13:39:37] [WARNING] [indexer] Word PRESCRIBED present in the query but not present in the words list.
+[05/08/2022 13:39:38] [WARNING] [indexer] Word COOKE present in the query but not present in the words list.
+[05/08/2022 13:39:38] [WARNING] [indexer] Word PILOCARPINE present in the query but not present in the words list.
+[05/08/2022 13:39:38] [WARNING] [indexer] Word TITRIMETRIC present in the query but not present in the words list.
+[05/08/2022 13:39:38] [WARNING] [indexer] Word DISADVANTAGES present in the query but not present in the words list.
+[05/08/2022 13:39:39] [WARNING] [indexer] Word PRENATALLY present in the query but not present in the words list.
+[05/08/2022 13:39:43] [WARNING] [indexer] Word NUCLEOTIDES present in the query but not present in the words list.
+[05/08/2022 13:39:43] [WARNING] [indexer] Word BIOLOGICALLY present in the query but not present in the words list.
+[05/08/2022 13:39:43] [WARNING] [indexer] Word PATHOGENETIC present in the query but not present in the words list.
+[05/08/2022 13:39:43] [WARNING] [indexer] Word PROLACTIN present in the query but not present in the words list.
+[05/08/2022 13:39:44] [WARNING] [indexer] Word PROTECT present in the query but not present in the words list.
+[05/08/2022 13:39:44] [WARNING] [indexer] Word INTERACTIONS present in the query but not present in the words list.
+[05/08/2022 13:39:44] [WARNING] [indexer] Word PROTEASES present in the query but not present in the words list.
+[05/08/2022 13:39:44] [WARNING] [indexer] Word ENDOGENOUS present in the query but not present in the words list.
+[05/08/2022 13:39:44] [WARNING] [indexer] Word ANTIPROTEASES present in the query but not present in the words list.
+[05/08/2022 13:39:44] [WARNING] [indexer] Word DEFENSES present in the query but not present in the words list.
+[05/08/2022 13:39:47] [WARNING] [indexer] Word MICROSCOPIC present in the query but not present in the words list.
+[05/08/2022 13:39:48] [WARNING] [indexer] Word EPISODE present in the query but not present in the words list.
+[05/08/2022 13:39:51] [WARNING] [indexer] Word TRAINING present in the query but not present in the words list.
+[05/08/2022 13:39:51] [WARNING] [indexer] Word PROMOTING present in the query but not present in the words list.
+[05/08/2022 13:39:51] [WARNING] [indexer] Word PHARMACODYNAMICS present in the query but not present in the words list.
+[05/08/2022 13:39:52] [WARNING] [indexer] Word EPITHELIA present in the query but not present in the words list.
+[05/08/2022 13:39:52] [WARNING] [indexer] Word AMINOGLYCOSIDES present in the query but not present in the words list.
+[05/08/2022 13:39:52] [WARNING] [indexer] Word SEMISYNTHETIC present in the query but not present in the words list.
+[05/08/2022 13:39:52] [WARNING] [indexer] Word PENICILLINS present in the query but not present in the words list.
+[05/08/2022 13:39:54] [WARNING] [indexer] Word EVER present in the query but not present in the words list.
+[05/08/2022 13:39:54] [WARNING] [indexer] Word FUNGI present in the query but not present in the words list.
+[05/08/2022 13:39:55] [WARNING] [indexer] Word VIRAL present in the query but not present in the words list.
+[05/08/2022 13:39:55] [WARNING] [indexer] Word EPIDEMIOLOGY present in the query but not present in the words list.
+[05/08/2022 13:39:55] [WARNING] [indexer] Word SPECIFICALLY present in the query but not present in the words list.
+[05/08/2022 13:39:56] [WARNING] [indexer] Word MODELS present in the query but not present in the words list.
+[05/08/2022 13:39:57] [WARNING] [indexer] Word DENTAL present in the query but not present in the words list.
+[05/08/2022 13:39:57] [WARNING] [indexer] Word CARIES present in the query but not present in the words list.
+[05/08/2022 13:39:57] [WARNING] [indexer] Word PERIODONTAL present in the query but not present in the words list.
+[05/08/2022 13:39:57] [WARNING] [indexer] Word BRAIN present in the query but not present in the words list.
+[05/08/2022 13:39:58] [INFO] [searcher] 99 queries executed in 28.239190 seconds, with average query execution time of 0.284502 seconds.
