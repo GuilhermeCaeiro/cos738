@@ -3,6 +3,7 @@ import logging
 import pickle
 import time
 import sys
+import bz2
 from .indexer import VectorModel
 
 class Searcher:
@@ -55,8 +56,11 @@ class Searcher:
 
     def load_model(self):
         logging.info("Loading model.")
-        with open(self.configs["MODELO"][0],'rb') as file: 
-            self.model = pickle.load(file)
+        #with open(self.configs["MODELO"][0],'rb') as file: 
+        compressed_file = bz2.BZ2File(self.configs["MODELO"][0],'rb')
+        self.model = pickle.load(compressed_file)
+        compressed_file.close()
+            
         logging.info("Model loaded.")
 
     def load_queries(self):

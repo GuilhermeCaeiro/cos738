@@ -3,6 +3,7 @@ import logging
 import pickle
 import time
 import sys
+import bz2
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem import PorterStemmer
 from unidecode import unidecode
@@ -152,9 +153,11 @@ class Indexer:
             True if "STEMMER" in self.configs else False
         )
         
-        with open(self.configs["ESCREVA"][0], "wb") as file:
-            #np.save(file, self.documents_matrix)
-            pickle.dump(model, file)
+        #with open(self.configs["ESCREVA"][0], "wb") as file:
+        #    #np.save(file, self.documents_matrix)
+        compressed_file = bz2.BZ2File(self.configs["ESCREVA"][0],'wb')
+        pickle.dump(model, compressed_file)
+        compressed_file.close()
 
         logging.info("TF-IDFs matrix saved to file: " + self.configs["ESCREVA"][0])
 
@@ -193,7 +196,7 @@ class VectorModel:
 
     def generate_query_vector(self, query):
         text = query.upper()
-        tokenizer = RegexpTokenizer(r'[a-zA-Z]{3,}') #\w*
+        tokenizer = RegexpTokenizer(r'[a-zA-Z]{2,}') #\w*
         query_words_list = tokenizer.tokenize(unidecode(text))
 
         if self.use_stemming:
@@ -260,6 +263,8 @@ class VectorModel:
         for i in range(len(self.document_ids)):
             similarity.append(sum(self.documents_matrix[i, :] * query_vector)/(np.linalg.norm(self.documents_matrix[i, :]) * np.linalg.norm(query_vector)))
 
+        #print(self.print_attribute_sizes())
+
         return similarity
 
     def print_tf_idf(self):
@@ -270,6 +275,16 @@ class VectorModel:
 
     def print_idf(self):
         print(self.idf, "\n")
+
+    def print_attribute_sizes(self):
+        print("words_list", sys.getsizeof(self.words_list)/(1024*1024))
+        print("documents_matrix", (self.documents_matrix.size * self.documents_matrix.itemsize)/(1024*1024))
+        print("document_ids", sys.getsizeof(self.document_ids)/(1024*1024))
+        print("use_thresold", sys.getsizeof(self.use_thresold)/(1024*1024))
+        print("threshold", sys.getsizeof(self.threshold)/(1024*1024))
+        print("tf", (self.tf.size * self.tf.itemsize)/(1024*1024))
+        print("idf", (self.idf.size * self.idf.itemsize)/(1024*1024))
+        print("use_stemming", sys.getsizeof(self.use_stemming)/(1024*1024))
 
 
 

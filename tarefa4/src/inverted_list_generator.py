@@ -105,7 +105,7 @@ class InvertedListGenerator:
 
         for document_id in sorted(self.input_documents.keys()):
             text = self.input_documents[document_id].upper()
-            tokenizer = RegexpTokenizer(r'[a-zA-Z]{3,}') #\w*
+            tokenizer = RegexpTokenizer(r'[a-zA-Z]{2,}') #\w*
             words_list = tokenizer.tokenize(unidecode(text))
 
             if "STEMMER" in self.configs:
