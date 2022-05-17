@@ -200,7 +200,7 @@ class VectorModel:
         query_words_list = tokenizer.tokenize(unidecode(text))
 
         if self.use_stemming:
-            stemmer = PorterStemmer()
+            stemmer = PorterStemmer(mode="MARTIN_EXTENSIONS")
             query_words_list = [stemmer.stem(token).upper() for token in query_words_list]
 
         query_vector = np.zeros(len(self.words_list))

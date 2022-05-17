@@ -109,7 +109,7 @@ class InvertedListGenerator:
             words_list = tokenizer.tokenize(unidecode(text))
 
             if "STEMMER" in self.configs:
-                stemmer = PorterStemmer()
+                stemmer = PorterStemmer(mode="MARTIN_EXTENSIONS")
                 words_list = [stemmer.stem(token).upper() for token in words_list]
 
             for word in words_list:
