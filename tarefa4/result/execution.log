@@ -1,715 +1,184 @@
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 10:37:32] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 10:37:35] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 10:37:35] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 10:37:35] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 10:37:35] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 10:37:35] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 10:37:35] [INFO] [indexer] Loading inverted list.
-[05/17/2022 10:37:35] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 10:37:35] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 10:37:35] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 10:37:35] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.012213 seconds.
-[05/17/2022 10:37:35] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 10:37:37] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.228349 seconds.
-[05/17/2022 10:37:37] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.314013 seconds.
-[05/17/2022 10:37:37] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 10:37:37] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 10:37:38] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 10:37:38] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 10:37:38] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 10:37:38] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 10:37:38] [INFO] [query_processor] Writing expected results.
-[05/17/2022 10:37:38] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 10:37:38] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 10:37:38] [INFO] [searcher] Loading model.
-[05/17/2022 10:37:38] [INFO] [searcher] Model loaded.
-[05/17/2022 10:37:38] [INFO] [searcher] Loading queries.
-[05/17/2022 10:37:38] [INFO] [searcher] 99 queries loaded.
-[05/17/2022 10:37:38] [INFO] [searcher] Running queries.
-[05/17/2022 10:39:20] [WARNING] [indexer] Word PHARMACODYNAM present in the query but not present in the words list.
-[05/17/2022 10:39:47] [WARNING] [indexer] Word EG present in the query but not present in the words list.
-[05/17/2022 10:39:52] [INFO] [searcher] 99 queries executed in 134.143492 seconds, with average query execution time of 1.352466 seconds.
-[05/17/2022 11:00:47] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:00:47] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:00:47] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:00:47] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:00:47] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:47] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:47] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:47] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:00:47] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:00:47] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:00:48] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:00:50] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:00:50] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:00:50] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:00:50] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:00:50] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:00:50] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:00:50] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:00:50] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:00:50] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:00:50] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.010802 seconds.
-[05/17/2022 11:00:50] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:00:52] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.020341 seconds.
-[05/17/2022 11:00:52] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.103390 seconds.
-[05/17/2022 11:00:52] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:00:52] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:00:53] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:00:53] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:00:53] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:00:53] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:00:53] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:00:53] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:00:53] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:00:53] [INFO] [searcher] Loading model.
-[05/17/2022 11:00:54] [INFO] [searcher] Model loaded.
-[05/17/2022 11:00:54] [INFO] [searcher] Loading queries.
-[05/17/2022 11:00:54] [INFO] [searcher] 99 queries loaded.
-[05/17/2022 11:00:54] [INFO] [searcher] Running queries.
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:01:16] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:01:19] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:01:19] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:01:19] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:01:19] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:01:19] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:01:19] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:01:19] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:01:19] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:01:19] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:01:19] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.010749 seconds.
-[05/17/2022 11:01:19] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:01:21] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.169840 seconds.
-[05/17/2022 11:01:21] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.249097 seconds.
-[05/17/2022 11:01:21] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:01:21] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:01:22] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:01:22] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:01:22] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:01:22] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:01:22] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:01:22] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:01:22] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:01:22] [INFO] [searcher] Loading model.
-[05/17/2022 11:01:22] [INFO] [searcher] Model loaded.
-[05/17/2022 11:01:22] [INFO] [searcher] Loading queries.
-[05/17/2022 11:01:22] [INFO] [searcher] 99 queries loaded.
-[05/17/2022 11:01:22] [INFO] [searcher] Running queries.
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:04:38] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:04:41] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:04:41] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:04:41] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:04:41] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:04:41] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:04:41] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:04:41] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:04:41] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:04:41] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:04:41] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.010665 seconds.
-[05/17/2022 11:04:41] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:04:43] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.153198 seconds.
-[05/17/2022 11:04:43] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.234035 seconds.
-[05/17/2022 11:04:43] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:04:43] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:04:44] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:04:44] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:04:44] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:04:44] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:04:44] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:04:44] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:04:44] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:04:44] [INFO] [searcher] Loading model.
-[05/17/2022 11:04:44] [INFO] [searcher] Model loaded.
-[05/17/2022 11:04:44] [INFO] [searcher] Loading queries.
-[05/17/2022 11:04:44] [INFO] [searcher] 99 queries loaded.
-[05/17/2022 11:04:44] [INFO] [searcher] Running queries.
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:08:35] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:08:37] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:08:37] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:08:38] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:08:38] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:08:38] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:08:38] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:08:38] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:08:38] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:08:38] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:08:38] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.010776 seconds.
-[05/17/2022 11:08:38] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:08:40] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.073344 seconds.
-[05/17/2022 11:08:40] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.157540 seconds.
-[05/17/2022 11:08:40] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:08:40] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:08:41] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:08:41] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:08:41] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:08:41] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:08:41] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:08:41] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:08:41] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:08:41] [INFO] [searcher] Loading model.
-[05/17/2022 11:08:41] [INFO] [searcher] Model loaded.
-[05/17/2022 11:08:41] [INFO] [searcher] Loading queries.
-[05/17/2022 11:08:41] [INFO] [searcher] 99 queries loaded.
-[05/17/2022 11:08:41] [INFO] [searcher] Running queries.
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:10:08] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:10:11] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:10:11] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:10:11] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:10:11] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:10:11] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:10:11] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:10:11] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:10:11] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:10:11] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:10:11] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.010878 seconds.
-[05/17/2022 11:10:11] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:10:13] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.073968 seconds.
-[05/17/2022 11:10:13] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.152530 seconds.
-[05/17/2022 11:10:13] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:10:13] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:10:14] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:10:14] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:10:14] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:10:14] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:10:14] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:10:14] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:10:14] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:10:14] [INFO] [searcher] Loading model.
-[05/17/2022 11:10:14] [INFO] [searcher] Model loaded.
-[05/17/2022 11:10:14] [INFO] [searcher] Loading queries.
-[05/17/2022 11:10:14] [INFO] [searcher] 99 queries loaded.
-[05/17/2022 11:10:14] [INFO] [searcher] Running queries.
-[05/17/2022 11:24:38] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:24:38] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:24:38] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:24:38] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:24:39] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:24:42] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:24:42] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:24:42] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:24:42] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:24:42] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:24:42] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:24:43] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:24:43] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:24:43] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:24:43] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.012713 seconds.
-[05/17/2022 11:24:43] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:24:45] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.818105 seconds.
-[05/17/2022 11:24:45] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.917229 seconds.
-[05/17/2022 11:24:45] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:24:45] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:24:47] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:24:47] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:24:47] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:24:47] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:24:47] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:24:47] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:24:47] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:24:47] [INFO] [searcher] Loading model.
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:25:06] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:25:10] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:25:10] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:25:10] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:25:10] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:25:10] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:25:10] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:25:10] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:25:10] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:25:10] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:25:10] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.012237 seconds.
-[05/17/2022 11:25:10] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:25:13] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.812652 seconds.
-[05/17/2022 11:25:13] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.900731 seconds.
-[05/17/2022 11:25:13] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:25:13] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:25:14] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:25:15] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:25:15] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:25:15] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:25:15] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:25:15] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:25:15] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:25:15] [INFO] [searcher] Loading model.
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Starting Inverted List Generator.
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Reading configurations' file.
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Using Potter Stemmer.
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Reading file data/cf74.xml
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Total documents read: 164
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Reading file data/cf75.xml
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Total documents read: 349
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Reading file data/cf76.xml
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Total documents read: 573
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Reading file data/cf77.xml
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Total documents read: 768
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Reading file data/cf78.xml
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Total documents read: 963
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Reading file data/cf79.xml
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Total documents read: 1215
-[05/17/2022 11:26:00] [INFO] [inverted_list_generator] Generating inverted list.
-[05/17/2022 11:26:04] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6494 terms considered.
-[05/17/2022 11:26:04] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
-[05/17/2022 11:26:04] [INFO] [inverted_list_generator] 6494 terms written. Saved inverted list to 'result/inverted_list.csv'
-[05/17/2022 11:26:04] [INFO] [indexer] Reading configurations' file.
-[05/17/2022 11:26:04] [INFO] [indexer] Using Potter Stemmer.
-[05/17/2022 11:26:04] [INFO] [indexer] Loading inverted list.
-[05/17/2022 11:26:04] [INFO] [indexer] Inverted list loaded.
-[05/17/2022 11:26:04] [INFO] [indexer] Calculating matrix of the TF-IDFs.
-[05/17/2022 11:26:04] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
-[05/17/2022 11:26:04] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.013081 seconds.
-[05/17/2022 11:26:04] [INFO] [indexer] Calculating tf (term frequency) for all documents.
-[05/17/2022 11:26:07] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.743712 seconds.
-[05/17/2022 11:26:07] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.845299 seconds.
-[05/17/2022 11:26:07] [INFO] [indexer] Saving the TF-IDF matrix.
-[05/17/2022 11:26:07] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
-[05/17/2022 11:26:08] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
-[05/17/2022 11:26:08] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
-[05/17/2022 11:26:08] [INFO] [query_processor] Reading file data/cfquery.xml
-[05/17/2022 11:26:08] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
-[05/17/2022 11:26:08] [INFO] [query_processor] Writing expected results.
-[05/17/2022 11:26:08] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
-[05/17/2022 11:26:08] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
-[05/17/2022 11:26:08] [INFO] [searcher] Loading model.
-[05/17/2022 11:26:09] [INFO] [searcher] Model loaded.
-[05/17/2022 11:26:09] [INFO] [searcher] Loading queries.
-[05/17/2022 11:26:09] [INFO] [searcher] 99 queries loaded.
-[05/17/2022 11:26:09] [INFO] [searcher] Running queries.
-[05/17/2022 11:28:24] [WARNING] [indexer] Word PHARMACODYNAM present in the query but not present in the words list.
-[05/17/2022 11:28:58] [WARNING] [indexer] Word EG present in the query but not present in the words list.
-[05/17/2022 11:29:05] [INFO] [searcher] 99 queries executed in 175.712775 seconds, with average query execution time of 1.771718 seconds.
-[05/17/2022 23:02:39] [INFO] [evaluator] Evaluating results.
-[05/17/2022 23:03:00] [INFO] [evaluator] Evaluating results.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 1.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 2.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 3.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 4.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 5.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 6.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 7.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 8.
-[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 9.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 10.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 11.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 12.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 13.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 14.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 15.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 16.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 17.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 18.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 19.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 20.
-[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 21.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 22.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 23.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 24.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 25.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 26.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 27.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 28.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 29.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 30.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 31.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 32.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 33.
-[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 34.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 35.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 36.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 37.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 38.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 39.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 40.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 41.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 42.
-[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 43.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 44.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 45.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 46.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 47.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 48.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 49.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 50.
-[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 51.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 52.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 53.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 54.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 55.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 56.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 57.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 58.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 59.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 60.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 61.
-[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 62.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 63.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 64.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 65.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 66.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 67.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 68.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 69.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 70.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 71.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 72.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 73.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 74.
-[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 75.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 76.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 77.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 78.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 79.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 80.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 81.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 82.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 83.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 84.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 85.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 86.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 87.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 88.
-[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 89.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 90.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 91.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 92.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 94.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 95.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 96.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 97.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 98.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 99.
-[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 100.
-[05/17/2022 23:03:09] [INFO] [evaluator] Result evaluation finished.
-[05/17/2022 23:03:09] [INFO] [evaluator] Generating CSVs.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
-[05/17/2022 23:03:09] [INFO] [evaluator] Generating report file.
-[05/17/2022 23:03:09] [INFO] [evaluator] Report file generated.
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Starting Inverted List Generator.
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Reading configurations' file.
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Using Potter Stemmer.
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Reading file data/cf74.xml
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Total documents read: 164
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Reading file data/cf75.xml
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Total documents read: 349
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Reading file data/cf76.xml
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Total documents read: 573
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Reading file data/cf77.xml
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Total documents read: 768
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Reading file data/cf78.xml
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Total documents read: 963
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Reading file data/cf79.xml
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Total documents read: 1215
+[05/17/2022 23:23:18] [INFO] [inverted_list_generator] Generating inverted list.
+[05/17/2022 23:23:21] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 6501 terms considered.
+[05/17/2022 23:23:21] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
+[05/17/2022 23:23:21] [INFO] [inverted_list_generator] 6501 terms written. Saved inverted list to 'result/inverted_list.csv'
+[05/17/2022 23:23:21] [INFO] [indexer] Reading configurations' file.
+[05/17/2022 23:23:22] [INFO] [indexer] Using Potter Stemmer.
+[05/17/2022 23:23:22] [INFO] [indexer] Loading inverted list.
+[05/17/2022 23:23:22] [INFO] [indexer] Inverted list loaded.
+[05/17/2022 23:23:22] [INFO] [indexer] Calculating matrix of the TF-IDFs.
+[05/17/2022 23:23:22] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
+[05/17/2022 23:23:22] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.015380 seconds.
+[05/17/2022 23:23:22] [INFO] [indexer] Calculating tf (term frequency) for all documents.
+[05/17/2022 23:23:25] [INFO] [indexer] Finished calculating tf for all documents. Total time: 2.824886 seconds.
+[05/17/2022 23:23:25] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 2.926913 seconds.
+[05/17/2022 23:23:25] [INFO] [indexer] Saving the TF-IDF matrix.
+[05/17/2022 23:23:25] [INFO] [indexer] Using Potter Stemmer in the Vector Model.
+[05/17/2022 23:23:26] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
+[05/17/2022 23:23:26] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
+[05/17/2022 23:23:26] [INFO] [query_processor] Reading file data/cfquery.xml
+[05/17/2022 23:23:26] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
+[05/17/2022 23:23:26] [INFO] [query_processor] Writing expected results.
+[05/17/2022 23:23:26] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
+[05/17/2022 23:23:26] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
+[05/17/2022 23:23:26] [INFO] [searcher] Loading model.
+[05/17/2022 23:23:27] [INFO] [searcher] Model loaded.
+[05/17/2022 23:23:27] [INFO] [searcher] Loading queries.
+[05/17/2022 23:23:27] [INFO] [searcher] 99 queries loaded.
+[05/17/2022 23:23:27] [INFO] [searcher] Running queries.
+[05/17/2022 23:25:34] [WARNING] [indexer] Word PHARMACODYNAM present in the query but not present in the words list.
+[05/17/2022 23:26:05] [WARNING] [indexer] Word EG present in the query but not present in the words list.
+[05/17/2022 23:26:12] [INFO] [searcher] 99 queries executed in 164.764506 seconds, with average query execution time of 1.661157 seconds.
+[05/17/2022 23:26:12] [INFO] [evaluator] Uso de stemmer detectado.
+[05/17/2022 23:26:12] [INFO] [evaluator] Evaluating results.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 1.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 2.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 3.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 4.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 5.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 6.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 7.
+[05/17/2022 23:26:13] [INFO] [evaluator] Evaluating query 8.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 9.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 10.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 11.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 12.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 13.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 14.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 15.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 16.
+[05/17/2022 23:26:14] [INFO] [evaluator] Evaluating query 17.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 18.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 19.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 20.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 21.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 22.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 23.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 24.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 25.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 26.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 27.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 28.
+[05/17/2022 23:26:15] [INFO] [evaluator] Evaluating query 29.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 30.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 31.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 32.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 33.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 34.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 35.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 36.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 37.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 38.
+[05/17/2022 23:26:16] [INFO] [evaluator] Evaluating query 39.
+[05/17/2022 23:26:17] [INFO] [evaluator] Evaluating query 40.
+[05/17/2022 23:26:17] [INFO] [evaluator] Evaluating query 41.
+[05/17/2022 23:26:17] [INFO] [evaluator] Evaluating query 42.
+[05/17/2022 23:26:17] [INFO] [evaluator] Evaluating query 43.
+[05/17/2022 23:26:17] [INFO] [evaluator] Evaluating query 44.
+[05/17/2022 23:26:17] [INFO] [evaluator] Evaluating query 45.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 46.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 47.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 48.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 49.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 50.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 51.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 52.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 53.
+[05/17/2022 23:26:18] [INFO] [evaluator] Evaluating query 54.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 55.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 56.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 57.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 58.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 59.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 60.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 61.
+[05/17/2022 23:26:19] [INFO] [evaluator] Evaluating query 62.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 63.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 64.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 65.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 66.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 67.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 68.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 69.
+[05/17/2022 23:26:20] [INFO] [evaluator] Evaluating query 70.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 71.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 72.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 73.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 74.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 75.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 76.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 77.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 78.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 79.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 80.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 81.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 82.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 83.
+[05/17/2022 23:26:21] [INFO] [evaluator] Evaluating query 84.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 85.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 86.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 87.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 88.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 89.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 90.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 91.
+[05/17/2022 23:26:22] [INFO] [evaluator] Evaluating query 92.
+[05/17/2022 23:26:23] [INFO] [evaluator] Evaluating query 94.
+[05/17/2022 23:26:23] [INFO] [evaluator] Evaluating query 95.
+[05/17/2022 23:26:23] [INFO] [evaluator] Evaluating query 96.
+[05/17/2022 23:26:23] [INFO] [evaluator] Evaluating query 97.
+[05/17/2022 23:26:23] [INFO] [evaluator] Evaluating query 98.
+[05/17/2022 23:26:23] [INFO] [evaluator] Evaluating query 99.
+[05/17/2022 23:26:23] [INFO] [evaluator] Evaluating query 100.
+[05/17/2022 23:26:23] [INFO] [evaluator] Result evaluation finished.
+[05/17/2022 23:26:23] [INFO] [evaluator] Generating CSVs.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:26:23] [INFO] [evaluator] Generating report file.
+[05/17/2022 23:26:23] [INFO] [evaluator] Report file generated.
