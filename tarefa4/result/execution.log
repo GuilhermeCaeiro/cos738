@@ -182,3 +182,191 @@
 [05/17/2022 23:26:23] [INFO] [evaluator] CSVs generated.
 [05/17/2022 23:26:23] [INFO] [evaluator] Generating report file.
 [05/17/2022 23:26:23] [INFO] [evaluator] Report file generated.
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Starting Inverted List Generator.
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Reading configurations' file.
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Not using stemming.
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Reading file data/cf74.xml
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 36 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 128 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 132 in file data/cf74.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Total documents read: 164
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Reading file data/cf75.xml
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 168 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 298 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 329 in file data/cf75.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Total documents read: 349
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Reading file data/cf76.xml
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 493 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 512 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 551 in file data/cf76.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Total documents read: 573
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Reading file data/cf77.xml
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 595 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 712 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 729 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 735 in file data/cf77.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Total documents read: 768
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Reading file data/cf78.xml
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 839 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 894 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 932 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 939 in file data/cf78.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Total documents read: 963
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Reading file data/cf79.xml
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 1023 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 1069 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 1089 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 1150 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 1154 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 1187 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [WARNING] [inverted_list_generator] Document 1225 in file data/cf79.xml without ABSTRACT or EXTRACT. Ignoring...
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Total documents read: 1215
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Generating inverted list.
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Inverted list generated from 1215 documents, with 9384 terms considered.
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] Saving inverted list to result/inverted_list.csv
+[05/17/2022 23:31:20] [INFO] [inverted_list_generator] 9384 terms written. Saved inverted list to 'result/inverted_list.csv'
+[05/17/2022 23:31:20] [INFO] [indexer] Reading configurations' file.
+[05/17/2022 23:31:20] [INFO] [indexer] Not using stemming.
+[05/17/2022 23:31:20] [INFO] [indexer] Loading inverted list.
+[05/17/2022 23:31:21] [INFO] [indexer] Inverted list loaded.
+[05/17/2022 23:31:21] [INFO] [indexer] Calculating matrix of the TF-IDFs.
+[05/17/2022 23:31:21] [INFO] [indexer] Calculating idf (inverse document frequency) for all documents.
+[05/17/2022 23:31:21] [INFO] [indexer] Finished calculating idf for all documents. Total time: 0.014493 seconds.
+[05/17/2022 23:31:21] [INFO] [indexer] Calculating tf (term frequency) for all documents.
+[05/17/2022 23:31:24] [INFO] [indexer] Finished calculating tf for all documents. Total time: 3.256928 seconds.
+[05/17/2022 23:31:24] [INFO] [indexer] Finished calculating matrix of the TF-IDFs. Total time: 3.387953 seconds.
+[05/17/2022 23:31:24] [INFO] [indexer] Saving the TF-IDF matrix.
+[05/17/2022 23:31:24] [INFO] [indexer] Not using stemming in the Vector Model.
+[05/17/2022 23:31:26] [INFO] [indexer] TF-IDFs matrix saved to file: result/vecmodel.pkl
+[05/17/2022 23:31:26] [INFO] [query_processor] Reading configurations' file 'pc.cfg'.
+[05/17/2022 23:31:26] [INFO] [query_processor] Reading file data/cfquery.xml
+[05/17/2022 23:31:26] [INFO] [query_processor] 99 queries read and written to result/queries.csv.
+[05/17/2022 23:31:26] [INFO] [query_processor] Writing expected results.
+[05/17/2022 23:31:26] [INFO] [query_processor] 4812 expected results written to 'result/expected_results.csv'.
+[05/17/2022 23:31:26] [INFO] [searcher] Reading configurations' file 'busca.cfg'.
+[05/17/2022 23:31:26] [INFO] [searcher] Loading model.
+[05/17/2022 23:31:28] [INFO] [searcher] Model loaded.
+[05/17/2022 23:31:28] [INFO] [searcher] Loading queries.
+[05/17/2022 23:31:28] [INFO] [searcher] 99 queries loaded.
+[05/17/2022 23:31:28] [INFO] [searcher] Running queries.
+[05/17/2022 23:32:11] [WARNING] [indexer] Word INCOMPLETELY present in the query but not present in the words list.
+[05/17/2022 23:32:50] [WARNING] [indexer] Word PRENATALLY present in the query but not present in the words list.
+[05/17/2022 23:33:28] [WARNING] [indexer] Word BIOLOGICALLY present in the query but not present in the words list.
+[05/17/2022 23:33:33] [WARNING] [indexer] Word PROTECT present in the query but not present in the words list.
+[05/17/2022 23:33:38] [WARNING] [indexer] Word ANTIPROTEASES present in the query but not present in the words list.
+[05/17/2022 23:34:42] [WARNING] [indexer] Word PHARMACODYNAMICS present in the query but not present in the words list.
+[05/17/2022 23:35:33] [WARNING] [indexer] Word EG present in the query but not present in the words list.
+[05/17/2022 23:35:45] [INFO] [searcher] 99 queries executed in 256.935339 seconds, with average query execution time of 2.592263 seconds.
+[05/17/2022 23:35:45] [INFO] [evaluator] Evaluating results.
+[05/17/2022 23:35:45] [INFO] [evaluator] Evaluating query 1.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 2.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 3.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 4.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 5.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 6.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 7.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 8.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 9.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 10.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 11.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 12.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 13.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 14.
+[05/17/2022 23:35:46] [INFO] [evaluator] Evaluating query 15.
+[05/17/2022 23:35:47] [INFO] [evaluator] Evaluating query 16.
+[05/17/2022 23:35:47] [INFO] [evaluator] Evaluating query 17.
+[05/17/2022 23:35:47] [INFO] [evaluator] Evaluating query 18.
+[05/17/2022 23:35:47] [INFO] [evaluator] Evaluating query 19.
+[05/17/2022 23:35:47] [INFO] [evaluator] Evaluating query 20.
+[05/17/2022 23:35:47] [INFO] [evaluator] Evaluating query 21.
+[05/17/2022 23:35:47] [INFO] [evaluator] Evaluating query 22.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 23.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 24.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 25.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 26.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 27.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 28.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 29.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 30.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 31.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 32.
+[05/17/2022 23:35:48] [INFO] [evaluator] Evaluating query 33.
+[05/17/2022 23:35:49] [INFO] [evaluator] Evaluating query 34.
+[05/17/2022 23:35:49] [INFO] [evaluator] Evaluating query 35.
+[05/17/2022 23:35:49] [INFO] [evaluator] Evaluating query 36.
+[05/17/2022 23:35:49] [INFO] [evaluator] Evaluating query 37.
+[05/17/2022 23:35:49] [INFO] [evaluator] Evaluating query 38.
+[05/17/2022 23:35:49] [INFO] [evaluator] Evaluating query 39.
+[05/17/2022 23:35:49] [INFO] [evaluator] Evaluating query 40.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 41.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 42.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 43.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 44.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 45.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 46.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 47.
+[05/17/2022 23:35:50] [INFO] [evaluator] Evaluating query 48.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 49.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 50.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 51.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 52.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 53.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 54.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 55.
+[05/17/2022 23:35:51] [INFO] [evaluator] Evaluating query 56.
+[05/17/2022 23:35:52] [INFO] [evaluator] Evaluating query 57.
+[05/17/2022 23:35:52] [INFO] [evaluator] Evaluating query 58.
+[05/17/2022 23:35:52] [INFO] [evaluator] Evaluating query 59.
+[05/17/2022 23:35:52] [INFO] [evaluator] Evaluating query 60.
+[05/17/2022 23:35:52] [INFO] [evaluator] Evaluating query 61.
+[05/17/2022 23:35:52] [INFO] [evaluator] Evaluating query 62.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 63.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 64.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 65.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 66.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 67.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 68.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 69.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 70.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 71.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 72.
+[05/17/2022 23:35:53] [INFO] [evaluator] Evaluating query 73.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 74.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 75.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 76.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 77.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 78.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 79.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 80.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 81.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 82.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 83.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 84.
+[05/17/2022 23:35:54] [INFO] [evaluator] Evaluating query 85.
+[05/17/2022 23:35:55] [INFO] [evaluator] Evaluating query 86.
+[05/17/2022 23:35:55] [INFO] [evaluator] Evaluating query 87.
+[05/17/2022 23:35:55] [INFO] [evaluator] Evaluating query 88.
+[05/17/2022 23:35:55] [INFO] [evaluator] Evaluating query 89.
+[05/17/2022 23:35:55] [INFO] [evaluator] Evaluating query 90.
+[05/17/2022 23:35:55] [INFO] [evaluator] Evaluating query 91.
+[05/17/2022 23:35:55] [INFO] [evaluator] Evaluating query 92.
+[05/17/2022 23:35:56] [INFO] [evaluator] Evaluating query 94.
+[05/17/2022 23:35:56] [INFO] [evaluator] Evaluating query 95.
+[05/17/2022 23:35:56] [INFO] [evaluator] Evaluating query 96.
+[05/17/2022 23:35:56] [INFO] [evaluator] Evaluating query 97.
+[05/17/2022 23:35:56] [INFO] [evaluator] Evaluating query 98.
+[05/17/2022 23:35:56] [INFO] [evaluator] Evaluating query 99.
+[05/17/2022 23:35:56] [INFO] [evaluator] Evaluating query 100.
+[05/17/2022 23:35:56] [INFO] [evaluator] Result evaluation finished.
+[05/17/2022 23:35:56] [INFO] [evaluator] Generating CSVs.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:35:56] [INFO] [evaluator] Generating report file.
+[05/17/2022 23:35:56] [INFO] [evaluator] Report file generated.
