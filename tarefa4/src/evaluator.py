@@ -214,7 +214,7 @@ class Evaluator:
 
     def generate_report(self):
         logging.info("Generating report file.")
-        with open("RELATORIO.MD", "a") as file:
+        with open(self.output_dir + "RELATORIO.MD", "a") as file:
             file.write("# Avaliação dos Resultados\n\n")
             file.write("### Avaliação dos Resultados do modelo vetorial sob múltiplas métricas.\n\n")
             file.write("Total de queries: %f\n\n" % len(self.query_metrics))
