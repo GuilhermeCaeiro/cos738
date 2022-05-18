@@ -599,3 +599,117 @@
 [05/17/2022 11:28:24] [WARNING] [indexer] Word PHARMACODYNAM present in the query but not present in the words list.
 [05/17/2022 11:28:58] [WARNING] [indexer] Word EG present in the query but not present in the words list.
 [05/17/2022 11:29:05] [INFO] [searcher] 99 queries executed in 175.712775 seconds, with average query execution time of 1.771718 seconds.
+[05/17/2022 23:02:39] [INFO] [evaluator] Evaluating results.
+[05/17/2022 23:03:00] [INFO] [evaluator] Evaluating results.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 1.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 2.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 3.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 4.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 5.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 6.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 7.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 8.
+[05/17/2022 23:03:01] [INFO] [evaluator] Evaluating query 9.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 10.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 11.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 12.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 13.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 14.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 15.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 16.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 17.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 18.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 19.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 20.
+[05/17/2022 23:03:02] [INFO] [evaluator] Evaluating query 21.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 22.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 23.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 24.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 25.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 26.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 27.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 28.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 29.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 30.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 31.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 32.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 33.
+[05/17/2022 23:03:03] [INFO] [evaluator] Evaluating query 34.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 35.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 36.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 37.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 38.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 39.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 40.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 41.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 42.
+[05/17/2022 23:03:04] [INFO] [evaluator] Evaluating query 43.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 44.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 45.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 46.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 47.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 48.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 49.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 50.
+[05/17/2022 23:03:05] [INFO] [evaluator] Evaluating query 51.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 52.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 53.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 54.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 55.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 56.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 57.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 58.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 59.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 60.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 61.
+[05/17/2022 23:03:06] [INFO] [evaluator] Evaluating query 62.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 63.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 64.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 65.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 66.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 67.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 68.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 69.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 70.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 71.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 72.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 73.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 74.
+[05/17/2022 23:03:07] [INFO] [evaluator] Evaluating query 75.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 76.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 77.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 78.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 79.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 80.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 81.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 82.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 83.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 84.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 85.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 86.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 87.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 88.
+[05/17/2022 23:03:08] [INFO] [evaluator] Evaluating query 89.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 90.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 91.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 92.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 94.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 95.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 96.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 97.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 98.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 99.
+[05/17/2022 23:03:09] [INFO] [evaluator] Evaluating query 100.
+[05/17/2022 23:03:09] [INFO] [evaluator] Result evaluation finished.
+[05/17/2022 23:03:09] [INFO] [evaluator] Generating CSVs.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] CSVs generated.
+[05/17/2022 23:03:09] [INFO] [evaluator] Generating report file.
+[05/17/2022 23:03:09] [INFO] [evaluator] Report file generated.
